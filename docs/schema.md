@@ -18,6 +18,7 @@ Every table has a `source` field: `real` or `synthetic`.
 | years_active | int | |
 | rating_avg | float | 0 if no ratings yet (new vendor) |
 | onboarded_date | date | |
+| verification_status | string | pending, verified, rejected (set by admin) |
 | source | string | real / synthetic |
 
 ## customers (anonymised, no names or phone numbers)
@@ -32,7 +33,8 @@ Every table has a `source` field: `real` or `synthetic`.
 |---|---|---|
 | log_id | string | |
 | timestamp | timestamp | |
-| action | string | search, vendor_view, quote_request, booking_confirmed, booking_cancelled, review_submitted |
+| action | string | search, vendor_view, quote_request, quote_response, availability_update, booking_confirmed, booking_cancelled, review_submitted, vendor_verified, booking_assigned |
+| actor_role | string | customer, vendor or admin: who performed the action |
 | session_id | string | |
 | customer_id | string | |
 | vendor_id | string | null for searches |
@@ -57,6 +59,7 @@ Every table has a `source` field: `real` or `synthetic`.
 | amount | int | INR |
 | status | string | confirmed, completed, cancelled |
 | cancelled_by | string | null, customer, vendor |
+| response_time_minutes | int | how long the vendor took to respond to the quote request |
 | source | string | real / synthetic |
 
 ## reviews
