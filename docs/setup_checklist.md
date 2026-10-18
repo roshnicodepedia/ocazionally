@@ -1,0 +1,11 @@
+# Setup checklist (Windows)
+- [ ] Python 3.11 installed (python --version)
+- [ ] Java 17 installed (java -version)
+- [ ] JAVA_HOME set
+- [ ] Git installed, GitHub repo created
+- [ ] Virtual environment created and activated
+- [ ] pip install -r requirements.txt done
+- [ ] python pipeline/test_spark.py runs successfully
+- [ ] First commit pushed
+- [ ] schema.md read and edited
+- [ ] First 3 vendor conversations booked
