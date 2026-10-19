@@ -1,0 +1,26 @@
+{
+  "searchStringsArray": [
+    "wedding decorator",
+    "event decorator",
+    "mandap decorator",
+    "catering service",
+    "wedding caterer",
+    "DJ sound system rental",
+    "DJ for wedding",
+    "wedding photographer",
+    "event photographer",
+    "mehendi artist",
+    "party plot",
+    "banquet hall",
+    "event lighting",
+    "tent house",
+    "event management company"
+  ],
+  "locationQuery": "Gandhinagar, Gujarat, India",
+  "maxCrawledPlacesPerSearch": 15,
+  "language": "en",
+  "countryCode": "in",
+  "skipClosedPlaces": true,
+  "maxReviews": 0,
+  "maxImages": 0
+}
