@@ -46,7 +46,8 @@ SYN_VENDOR_TARGET = {"Ahmedabad": 750, "Surat": 450, "Vadodara": 280,
 
 CATS = ["decor", "catering", "sound_dj", "photography",
         "mehendi", "venue", "lighting", "other"]
-CAT_SHARE = np.array([.22, .20, .08, .13, .05, .13, .07, .12])
+# synthetic vendor mix follows demand (sound/lighting are booked by most festival events)
+CAT_SHARE = np.array([.17, .16, .15, .13, .05, .12, .13, .09])
 # vendor price band per category (INR). catering = PER PLATE, the rest per event
 PRICE_BAND = {"decor": (15000, 400000), "catering": (250, 1200),
               "sound_dj": (8000, 60000), "photography": (15000, 250000),
@@ -115,6 +116,11 @@ ADMIN_ASSIGN_PROB = 0.12   # early-stage manual matching by the admin
 TREND_PER_YEAR = 0.30      # marketplace growth
 
 
+def save_parquet(df, path):
+    """Spark cannot read nanosecond timestamps, so store them as microseconds."""
+    df.to_parquet(path, index=False, coerce_timestamps="us", allow_truncated_timestamps=True)
+
+
 def sha_id(prefix, text, n=12):
     return prefix + hashlib.sha1(text.encode()).hexdigest()[:n]
 
@@ -132,34 +138,49 @@ def build_vendors(rng, listed_path):
         real = pd.read_csv(listed_path, dtype=str).fillna("")
         real = real[real["city"].isin(CITIES) & real["category"].isin(CATS)]
         real = real.drop_duplicates("vendor_id")
+        if "manual_exclude" in real.columns:
+            ex = (real["manual_exclude"] == "yes").sum()
+            real = real[real["manual_exclude"] != "yes"]
+            if ex:
+                print(f"  skipped {ex} vendors you excluded by hand")
+        if "likely_event_vendor" in real.columns:
+            dropped = (real["likely_event_vendor"] == "no").sum()
+            real = real[real["likely_event_vendor"] != "no"]
+            print(f"  dropped {dropped} listings that are not event vendors (restaurants, shops, ...)")
         for _, r in real.iterrows():
             rc = r.get("google_review_count", "")
             real_parts.append(dict(
                 vendor_id=r["vendor_id"], name=r["name"], category=r["category"],
                 city=r["city"], area=r.get("area", ""),
-                pop=(float(rc) if rc not in ("", "nan") else 0.0) + 3.0,
+                pop=min(float(rc) if rc not in ("", "nan") else 0.0, 300.0) + 3.0,
                 source="listed"))
         print(f"  using {len(real_parts)} real listed vendors from {listed_path}")
     else:
         print(f"  {listed_path} not found: all vendors will be synthetic")
 
     rows = list(real_parts)
-    real_n = pd.Series([r["city"] for r in real_parts]).value_counts().to_dict() \
-        if real_parts else {}
+    real_cc = {}
+    for r in real_parts:
+        real_cc[(r["city"], r["category"])] = real_cc.get((r["city"], r["category"]), 0) + 1
     counter = 1
     for city, target in SYN_VENDOR_TARGET.items():
-        have = real_n.get(city, 0)
-        need = 0 if have >= 0.6 * target else target - have
-        cats = rng.choice(len(CATS), size=need, p=CAT_SHARE)
-        for c in cats:
-            rows.append(dict(vendor_id=f"S{counter:04d}", name=f"Synthetic {CATS[c]} {counter}",
-                             category=CATS[c], city=city, area="",
-                             pop=float((rng.pareto(1.3) + 1) * 20), source="synthetic"))
-            counter += 1
+        added = 0
+        for ci, cat in enumerate(CATS):
+            # the Google directory is incomplete (top results only), so fill each
+            # category up to the supply this city's demand needs, with synthetic vendors
+            want = int(round(target * CAT_SHARE[ci]))
+            need = max(0, want - real_cc.get((city, cat), 0))
+            for _ in range(need):
+                rows.append(dict(vendor_id=f"S{counter:04d}", name=f"Synthetic {cat} {counter}",
+                                 category=cat, city=city, area="",
+                                 pop=float(min(rng.pareto(1.3) + 1, 15.0) * 20), source="synthetic"))
+                counter += 1
+                added += 1
+        print(f"  {city}: added {added} synthetic vendors to fill supply gaps")
 
     v = pd.DataFrame(rows).reset_index(drop=True)
     n = len(v)
-    v["pop"] = v["pop"] ** 0.9 * np.exp(rng.normal(0, 0.4, n))
+    v["pop"] = v["pop"] ** 0.7 * np.exp(rng.normal(0, 0.4, n))
 
     # hidden behaviour traits (kept in a separate file, never in the vendors table)
     tier = rng.beta(2, 2, n)
@@ -593,10 +614,10 @@ def main():
                          "price_max", "capacity_per_month", "peak_months", "years_active",
                          "rating_avg", "onboarded_date", "verification_status", "source",
                          "attrs_source"]]
-    vend_out.to_parquet(os.path.join(args.out, "vendors.parquet"), index=False)
-    hidden.to_parquet(os.path.join(args.out, "vendors_hidden_truth.parquet"), index=False)
+    save_parquet(vend_out, os.path.join(args.out, "vendors.parquet"))
+    save_parquet(hidden, os.path.join(args.out, "vendors_hidden_truth.parquet"))
     customers["source"] = "synthetic"
-    customers.to_parquet(os.path.join(args.out, "customers.parquet"), index=False)
+    save_parquet(customers, os.path.join(args.out, "customers.parquet"))
 
     # --- bookings ------------------------------------------------------------
     it = B["intent"]
@@ -618,8 +639,8 @@ def main():
         response_time_minutes=np.round(B["resp_min"]).astype(int),
         category=np.array(CATS)[B["cat"]],      # extra convenience column
         source="synthetic"))
-    bk_df.to_parquet(os.path.join(args.out, "bookings.parquet"), index=False)
-    rv_df.to_parquet(os.path.join(args.out, "reviews.parquet"), index=False)
+    save_parquet(bk_df, os.path.join(args.out, "bookings.parquet"))
+    save_parquet(rv_df, os.path.join(args.out, "reviews.parquet"))
 
     # --- events_log, one part file per month --------------------------------
     action_names = np.array(list(F["A"].keys()))
@@ -656,7 +677,7 @@ def main():
             event_date=pd.to_datetime(ev_arr[m]), source="synthetic"))
         log_id_counter += len(m)
         total_rows += len(m)
-        part.to_parquet(os.path.join(args.out, "events_log", f"part-{mk}.parquet"), index=False)
+        save_parquet(part, os.path.join(args.out, "events_log", f"part-{mk}.parquet"))
 
     # --- small CSV samples to eyeball in Excel -------------------------------
     bk_df.head(500).to_csv(os.path.join(args.out, "sample_bookings.csv"), index=False)
@@ -680,6 +701,11 @@ def main():
     k = max(1, int(0.1 * len(share)))
     print(f"top 10% of vendors take {share.head(k).sum() / share.sum():.0%} of bookings")
     print(f"vendors with zero bookings: {len(vend_out) - len(share)}")
+    vm = (bk_df.groupby(["vendor_id", "month"]).size().rename("n").reset_index()
+          .merge(vend_out[["vendor_id", "capacity_per_month"]], on="vendor_id"))
+    print(f"busiest vendor: {share.iloc[0]:,} bookings in 36 months "
+          f"(about {share.iloc[0] / 36:.0f} a month)")
+    print(f"vendor-months above stated capacity: {(vm['n'] > vm['capacity_per_month']).mean():.1%}")
     print(f"done in {time.time() - t0:.0f}s")
 
 

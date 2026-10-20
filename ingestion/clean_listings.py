@@ -38,15 +38,19 @@ CATEGORY_BY_SEARCH = {
     "event management company": "other",
 }
 
-# fallback: guess from Google's own category label
-CATEGORY_KEYWORDS = [
-    ("decor", ["decorat", "florist", "flower"]),
-    ("catering", ["cater", "food"]),
-    ("sound_dj", ["dj", "sound", "music", "disc jockey"]),
+# Google's own label is the best clue to what a business really is.
+# Checked in this order; the first match wins. If nothing matches we fall back
+# to the search term that found the place.
+GOOGLE_CAT_RULES = [
+    ("decor", ["decorat", "florist", "flower", "balloon"]),
+    ("catering", ["cater", "box lunch"]),
+    ("sound_dj", ["dj", "disc jockey", "audio", "sound", "orchestra"]),
     ("photography", ["photo", "video"]),
-    ("mehendi", ["mehendi", "mehndi", "henna"]),
-    ("venue", ["banquet", "party", "wedding venue", "event venue", "hall", "plot", "resort"]),
-    ("lighting", ["light"]),
+    ("mehendi", ["mehndi", "mehandi", "henna", "make-up", "makeup"]),
+    ("venue", ["banquet", "auditorium", "venue", "community center", "hall",
+               "resort", "hotel", "farm"]),
+    ("lighting", ["lighting"]),
+    ("other", ["event management", "planner", "wedding service", "tent", "exhibition"]),
 ]
 
 OUT_COLUMNS = [
@@ -54,10 +58,40 @@ OUT_COLUMNS = [
     "price_min", "price_max", "capacity_per_month", "peak_months", "years_active",
     "rating_avg", "onboarded_date", "verification_status", "source",
     "contact_phone", "website", "google_maps_url", "google_place_id",
+    "google_category", "likely_event_vendor",
     "google_rating", "google_review_count", "has_phone",
-    "outreach_status", "open_to_pilot", "how_they_get_clients",
+    "manual_exclude", "outreach_status", "open_to_pilot", "how_they_get_clients",
     "would_pay_for_leads", "cancellation_habits", "notes",
 ]
+
+
+# Google's own category label tells us whether a listing is a real event vendor.
+STRONG_ALLOW = ["event", "wedding", "caterer", "catering", "decorat", "dj", "disc jockey",
+                "photograph", "videograph", "mehndi", "mehandi", "henna", "banquet",
+                "tent", "balloon", "marriage", "orchestra"]
+WEAK_ALLOW = ["planner", "party planner", "community center", "audio", "sound", "stage",
+              "talent", "florist", "flower", "venue", "hall", "exhibition", "function",
+              "auditorium", "make-up", "makeup", "box lunch"]
+DENY = ["restaurant", "cafe", "butcher", "clothing", "apartment", "agricultural", "appliance",
+        "wholesaler", "home goods", "hotel", "electrical engineer", "corporate office",
+        "manufacturer", "store", "shop", "supermarket", "school", "hospital", "bakery",
+        "college", "gym", "salon", "boutique", "furniture"]
+
+
+def is_event_vendor(google_category, category=None):
+    g = str(google_category).strip().lower()
+    if not g:
+        return "unknown"
+    # hotels and resorts count only when they turned up in a venue search
+    if category == "venue" and any(w in g for w in ("hotel", "resort", "farm")):
+        return "yes"
+    if any(w in g for w in STRONG_ALLOW):
+        return "yes"
+    if any(w in g for w in DENY):
+        return "no"
+    if any(w in g for w in WEAK_ALLOW):
+        return "yes"
+    return "no"
 
 
 def col(df, *names):
@@ -80,16 +114,16 @@ def normalize_phone(raw):
 
 
 def guess_category(search, google_cat):
+    g = str(google_cat).lower()
+    for cat, words in GOOGLE_CAT_RULES:
+        if any(w in g for w in words):
+            return cat
     s = str(search).strip().lower()
     if s in CATEGORY_BY_SEARCH:
         return CATEGORY_BY_SEARCH[s]
     # area searches look like "wedding decorator in Bodakdev, Ahmedabad"
     for key, cat in CATEGORY_BY_SEARCH.items():
         if s.startswith(key + " in "):
-            return cat
-    g = str(google_cat).lower()
-    for cat, words in CATEGORY_KEYWORDS:
-        if any(w in g for w in words):
             return cat
     return "other"
 
@@ -156,6 +190,9 @@ def build_new_rows(raw):
     out["website"] = col(raw, "website")
     out["google_maps_url"] = col(raw, "url")
     out["google_place_id"] = col(raw, "placeId")
+    out["google_category"] = google_cat.str.strip()
+    out["likely_event_vendor"] = [is_event_vendor(g, c) for g, c in
+                                  zip(out["google_category"], out["category"])]
     out["google_rating"] = col(raw, "totalScore")
     out["google_review_count"] = col(raw, "reviewsCount")
 
@@ -221,6 +258,8 @@ def main():
     print("Vendors per city and category:")
     print(pd.crosstab(final["city"], final["category"], margins=True).to_string())
     print(f"\nWith a phone number: {(final['has_phone'] == 'yes').mean():.0%}")
+    print("Looks like a real event vendor (from Google's category):")
+    print("  " + final["likely_event_vendor"].replace("", "unknown").value_counts().to_string().replace("\n", "\n  "))
     print("\nTop areas per city (check that coverage is not stuck in one part of town):")
     for city, grp in final.groupby("city"):
         top = grp["area"].replace("", "(blank)").value_counts().head(12)
