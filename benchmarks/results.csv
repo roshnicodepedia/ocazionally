@@ -1,0 +1,3 @@
+job,description,rows,mapreduce_seconds,dataframe_seconds,speedup,results_match
+Job 1,bookings per city/category/month,378922,6.92,0.57,12.22,True
+Job 2,events per month/action,4045946,40.62,1.38,29.35,True
