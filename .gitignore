@@ -8,3 +8,4 @@ metastore_db/
 derby.log
 .env
 data/private/
+storage/rs_data/

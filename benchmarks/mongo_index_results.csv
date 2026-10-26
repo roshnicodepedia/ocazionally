@@ -1,0 +1,4 @@
+query,collection,plan_before,docs_read_before,ms_before,plan_after,docs_read_after,ms_after,speedup
+Q1  Top verified decor vendors in Ahmedabad by rating,vendors,COLLSCAN,1950,2.29,IXSCAN,10,1.3,1.8
+Q2  One vendor's bookings in a 3-month window,bookings,COLLSCAN,378922,244.5,IXSCAN,147,3.18,76.8
+Q3  Surat photography bookings in Jan 2026,bookings,COLLSCAN,378922,321.8,IXSCAN,563,8.12,39.6
