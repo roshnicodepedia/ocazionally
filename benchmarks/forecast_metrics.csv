@@ -1,0 +1,5 @@
+model,MAE,RMSE,WMAPE
+Naive: same as 4 weeks ago,16.84,28.81,23.91
+Naive: same week last year,18.38,33.16,26.09
+Random Forest (MLlib),15.8,26.5,22.42
+Gradient-Boosted Trees (MLlib),11.38,17.81,16.15
