@@ -1,0 +1,11 @@
+city,event_type,service,vendor_id,vendor,segment,rating,cancel_rate,est_cost
+Ahmedabad,navratri_society,decor,S0094,Synthetic decor 94,Premium-priced,4.56,0.04,289400
+Ahmedabad,navratri_society,lighting,S0339,Synthetic lighting 339,Steady mid-market 5,4.61,0.089,51100
+Ahmedabad,navratri_society,sound_dj,S0177,Synthetic sound_dj 177,Steady mid-market 5,4.51,0.057,21000
+Surat,wedding,catering,S0419,Synthetic catering 419,High-volume workhorses,4.4,0.058,241200
+Surat,wedding,decor,S0351,Synthetic decor 351,Steady mid-market 5,4.5,0.05,271900
+Surat,wedding,photography,S0566,Synthetic photography 566,Steady mid-market 5,4.52,0.047,161700
+Surat,wedding,sound_dj,S0545,Synthetic sound_dj 545,Reliable performers,4.5,0.065,16300
+Surat,wedding,venue,S0656,Synthetic venue 656,High-volume workhorses,4.39,0.079,116600
+Vadodara,corporate,catering,S0845,Synthetic catering 845,Reliable performers,4.62,0.052,22300
+Vadodara,corporate,venue,S1004,Synthetic venue 1004,Steady mid-market 5,4.37,0.056,252700

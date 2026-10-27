@@ -1,0 +1,9 @@
+segment,vendors,avg bookings,per month,cancel %,response min,rating,price index
+Frequent cancellers,214,91.0,4.93,18.0,141.71,3.99,0.97
+High-volume workhorses,79,1010.48,31.21,10.0,171.59,3.99,1.02
+New / unproven (under 10 bookings),109,4.76,1.81,10.0,185.32,3.98,1.09
+Not verified,280,0.0,0.0,0.0,,,1.04
+Premium-priced,395,116.43,5.31,8.0,134.22,3.86,1.31
+Reliable performers,370,119.32,5.63,8.0,124.54,4.08,0.69
+Slow responders,85,198.48,8.23,12.0,528.02,3.98,0.94
+Steady mid-market 5,418,411.69,13.99,10.0,132.51,3.92,1.0

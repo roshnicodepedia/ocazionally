@@ -1,0 +1,31 @@
+event_type,bundle,size,support
+birthday,catering + decor,2,0.394
+birthday,decor + sound_dj,2,0.294
+birthday,decor + photography,2,0.233
+college_fest,lighting + sound_dj,2,0.614
+college_fest,photography + sound_dj,2,0.441
+college_fest,lighting + photography,2,0.415
+corporate,catering + venue,2,0.364
+corporate,catering + photography,2,0.337
+corporate,catering + sound_dj,2,0.333
+diwali,decor + lighting,2,0.449
+diwali,catering + lighting,2,0.366
+diwali,catering + decor,2,0.356
+navratri_society,lighting + sound_dj,2,0.675
+navratri_society,decor + sound_dj,2,0.423
+navratri_society,decor + lighting,2,0.381
+other,decor + photography,2,0.137
+other,lighting + photography,2,0.134
+other,other + photography,2,0.133
+uttarayan,catering + sound_dj,2,0.382
+uttarayan,lighting + sound_dj,2,0.324
+uttarayan,other + sound_dj,2,0.312
+wedding,catering + decor,2,0.747
+wedding,catering + photography,2,0.728
+wedding,decor + photography,2,0.715
+services -> event,mehendi + photography + venue => wedding,3,0.974
+services -> event,lighting + other + sound_dj => college_fest,3,0.284
+services -> event,lighting + sound_dj => navratri_society,2,0.173
+services -> event,catering + other => corporate,2,0.145
+services -> event,decor => birthday,1,0.329
+services -> event,other => other,1,0.124
