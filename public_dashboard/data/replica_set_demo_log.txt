@@ -1,0 +1,40 @@
+======================================================================
+REPLICATION AND FAILOVER DEMO (3-server MongoDB replica set)
+======================================================================
+[  0.0s] Using C:\Program Files\MongoDB\Server\8.2\bin\mongod.exe
+[  3.0s] STEP 1  Starting three MongoDB servers ...
+[  6.4s]         all three servers are up
+[  6.8s]         replica set created, waiting for the first election ...
+[ 13.3s]         server 27018 was elected PRIMARY
+[ 13.4s] STEP 2  Copying the vendors collection into the replica set ...
+[ 13.5s]         wrote 1,950 vendor documents (acknowledged by a majority)
+[ 13.6s]         every server now holds a full copy:
+      port 27018   PRIMARY    vendors stored: 1,950
+      port 27019   SECONDARY  vendors stored: 1,950
+      port 27020   SECONDARY  vendors stored: 1,950
+[ 13.9s] STEP 3  Simulating a crash: killing the PRIMARY (port 27018) ...
+[ 23.6s]         server 27019 took over as PRIMARY after 9.7 seconds
+[ 23.6s] STEP 4  Writing while one server is down ...
+[ 23.7s]         write ACCEPTED (2 of 3 servers form a majority, so the system stays available)
+[ 23.7s] STEP 5  Restarting the crashed server (port 27018) ...
+[ 26.2s]         it rejoined as a SECONDARY and caught up, including the write it missed
+[ 26.2s]         cluster state:
+      port 27018   SECONDARY  vendors stored: 1,951
+      port 27019   PRIMARY    vendors stored: 1,951
+      port 27020   SECONDARY  vendors stored: 1,951
+[ 26.5s] STEP 6  CAP theorem: killing the primary (27019) AND a secondary (27018) ...
+[ 34.5s]         only server 27020 is left, so no majority is possible
+[ 41.7s]         write REFUSED: ServerSelectionTimeoutError
+        -> the cluster chose CONSISTENCY over AVAILABILITY (it will not accept a write
+           it cannot safely replicate)
+[ 41.7s]         reads still work on the lone server (may be slightly stale): 1,951 vendors
+
+SUMMARY FOR YOUR REPORT
+  - 3-member replica set, every vendor stored 3 times (replication factor 3)
+  - primary crash -> automatic election -> new primary in 9.7s
+  - writes continue with 2 of 3 servers (majority write concern)
+  - the returning server re-synced without manual work
+  - with only 1 of 3 left, writes are refused: consistency over availability (CP)
+
+[ 41.7s] Cleaning up: stopping the three demo servers ...
+[ 43.3s] Done. Log saved to benchmarks\replica_set_demo_log.txt

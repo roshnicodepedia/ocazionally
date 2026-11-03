@@ -11,15 +11,16 @@ Every table has a `source` field: `real` or `synthetic`.
 | category | string | decor, catering, sound_dj, photography, mehendi, venue, lighting, other |
 | city | string | |
 | area | string | locality within the city |
-| price_min | int | INR, lowest typical quote |
-| price_max | int | INR, highest typical quote |
+| price_min | int | INR, lowest typical quote (catering: per plate) |
+| price_max | int | INR, highest typical quote (catering: per plate) |
 | capacity_per_month | int | events they can handle in a month |
 | peak_months | string | e.g. "10,11,12,1,2" |
 | years_active | int | |
 | rating_avg | float | 0 if no ratings yet (new vendor) |
 | onboarded_date | date | |
 | verification_status | string | pending, verified, rejected (set by admin) |
-| source | string | real / synthetic |
+| source | string | listed (real Google listing) / synthetic |
+| attrs_source | string | simulated: prices, capacity, ratings and behaviour are simulated even for listed vendors |
 
 ## customers (anonymised, no names or phone numbers)
 | field | type | notes |
@@ -27,6 +28,7 @@ Every table has a `source` field: `real` or `synthetic`.
 | customer_id | string | hashed id |
 | customer_type | string | individual, housing_society, college, corporate |
 | city | string | |
+| source | string | real / synthetic |
 
 ## events_log (every platform action, one row per action)
 | field | type | notes |
@@ -43,6 +45,7 @@ Every table has a `source` field: `real` or `synthetic`.
 | budget | int | INR, only for searches / quote requests |
 | guest_count | int | |
 | event_date | date | date of the planned event |
+| source | string | real / synthetic |
 
 ## bookings
 | field | type | notes |
@@ -51,6 +54,7 @@ Every table has a `source` field: `real` or `synthetic`.
 | event_instance_id | string | groups all bookings of the same real event (used for FP-Growth bundles) |
 | customer_id | string | |
 | vendor_id | string | |
+| category | string | the service booked: decor, catering, sound_dj, photography, mehendi, venue, lighting, other |
 | event_type | string | as above |
 | city | string | |
 | guest_count | int | |

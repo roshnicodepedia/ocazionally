@@ -1,0 +1,6 @@
+shard_key,distinct_values,share_shard1,share_shard2,share_shard3,imbalance,newest_writes_on_busiest_shard,shards_A,shards_B,shards_C,shards_D,score
+hashed _id (booking id),378922,0.333,0.334,0.333,1.0,0.335,3,3,3,1,1.0
+hashed vendor_id,1665,0.342,0.34,0.317,1.03,0.347,1,3,3,3,3.0
+range city,5,0.421,0.413,0.166,1.26,0.426,3,1,3,3,3.0
+range event_date,1096,0.312,0.311,0.377,1.13,1.0,2,1,3,3,4.5
+"range {city, vendor_id}",1665,0.334,0.334,0.332,1.0,0.342,3,2,3,3,1.5

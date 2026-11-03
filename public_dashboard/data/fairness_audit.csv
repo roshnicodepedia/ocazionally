@@ -1,0 +1,4 @@
+quality_band,new (<90 days),settling (90-365),established (>1 yr),ratio_new_vs_established
+lower quality,0.59,1.08,1.01,0.58
+middle quality,0.61,1.1,1.06,0.58
+higher quality,0.61,1.03,1.01,0.6

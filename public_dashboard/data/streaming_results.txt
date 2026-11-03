@@ -1,0 +1,52 @@
+========================================================================
+LIVE BOOKING FEED: replaying 2025-09-13 (676 bookings, the busiest day in the data)
+========================================================================
+
+Streaming started. A new hour of bookings arrives every 2.5 seconds:
+
+  batch  1 | simulated hour 00:00 | bookings so far    39 | this hour   19 | busiest: Ahmedabad catering (2)
+  batch  2 | simulated hour 01:00 | bookings so far    64 | this hour    6 | busiest: Ahmedabad lighting (2)
+      SURGE ALERT  Vadodara, 00:00-01:00 : 14 bookings, 3.7x the usual 4. Notify vendors in Vadodara.
+  batch  3 | simulated hour 02:00 | bookings so far    82 | this hour    5 | busiest: Ahmedabad photography (1)
+  batch  4 | simulated hour 03:00 | bookings so far    85 | this hour    2 | busiest: Surat decor (1)
+  batch  5 | simulated hour 04:00 | bookings so far    89 | this hour    3 | busiest: Vadodara other (1)
+  batch  6 | simulated hour 05:00 | bookings so far    92 | this hour    2 | busiest: Surat lighting (1)
+  batch  7 | simulated hour 06:00 | bookings so far    97 | this hour    2 | busiest: Ahmedabad catering (1)
+  batch  8 | simulated hour 07:00 | bookings so far   104 | this hour    5 | busiest: Surat venue (2)
+  batch  9 | simulated hour 08:00 | bookings so far   122 | this hour    8 | busiest: Vadodara photography (1)
+      SURGE ALERT  Rajkot, 07:00-08:00 : 5 bookings, 3.1x the usual 2. Notify vendors in Rajkot.
+      SURGE ALERT  Surat, 07:00-08:00 : 6 bookings, 3.3x the usual 2. Notify vendors in Surat.
+  batch 10 | simulated hour 09:00 | bookings so far   137 | this hour    6 | busiest: Vadodara decor (2)
+      SURGE ALERT  Vadodara, 08:00-09:00 : 7 bookings, 3.7x the usual 2. Notify vendors in Vadodara.
+  batch 11 | simulated hour 10:00 | bookings so far   154 | this hour    8 | busiest: Ahmedabad other (1)
+  batch 12 | simulated hour 11:00 | bookings so far   170 | this hour    8 | busiest: Surat catering (2)
+      SURGE ALERT  Vadodara, 10:00-11:00 : 8 bookings, 3.2x the usual 2. Notify vendors in Vadodara.
+  batch 13 | simulated hour 12:00 | bookings so far   211 | this hour   22 | busiest: Rajkot lighting (4)
+  batch 14 | simulated hour 13:00 | bookings so far   248 | this hour   18 | busiest: Surat photography (3)
+      SURGE ALERT  Rajkot, 12:00-13:00 : 11 bookings, 3.4x the usual 3. Notify vendors in Rajkot.
+  batch 15 | simulated hour 14:00 | bookings so far   299 | this hour   23 | busiest: Surat photography (3)
+      SURGE ALERT  Rajkot, 13:00-14:00 : 11 bookings, 3.2x the usual 3. Notify vendors in Rajkot.
+  batch 16 | simulated hour 15:00 | bookings so far   355 | this hour   31 | busiest: Surat lighting (3)
+      SURGE ALERT  Surat, 14:00-15:00 : 18 bookings, 3.6x the usual 5. Notify vendors in Surat.
+  batch 17 | simulated hour 16:00 | bookings so far   387 | this hour   18 | busiest: Ahmedabad venue (2)
+      SURGE ALERT  Rajkot, 15:00-16:00 : 12 bookings, 3.9x the usual 3. Notify vendors in Rajkot.
+  batch 18 | simulated hour 17:00 | bookings so far   427 | this hour   17 | busiest: Ahmedabad sound_dj (2)
+      SURGE ALERT  Gandhinagar, 16:00-17:00 : 9 bookings, 3.7x the usual 2. Notify vendors in Gandhinagar.
+  batch 19 | simulated hour 18:00 | bookings so far   451 | this hour   13 | busiest: Surat sound_dj (3)
+  batch 20 | simulated hour 19:00 | bookings so far   492 | this hour   22 | busiest: Surat catering (3)
+  batch 21 | simulated hour 20:00 | bookings so far   523 | this hour   17 | busiest: Surat sound_dj (3)
+      SURGE ALERT  Surat, 19:00-20:00 : 17 bookings, 3.5x the usual 5. Notify vendors in Surat.
+  batch 22 | simulated hour 21:00 | bookings so far   572 | this hour   26 | busiest: Ahmedabad sound_dj (3)
+      SURGE ALERT  Surat, 20:00-21:00 : 20 bookings, 3.5x the usual 6. Notify vendors in Surat.
+  batch 23 | simulated hour 22:00 | bookings so far   627 | this hour   26 | busiest: Ahmedabad decor (5)
+  batch 24 | simulated hour 23:00 | bookings so far   676 | this hour   25 | busiest: Ahmedabad catering (3)
+
+========================================================================
+SUMMARY FOR YOUR REPORT
+========================================================================
+  Bookings streamed:        676 (in 66 s of wall-clock time)
+  Micro-batches processed:  24
+  Average micro-batch latency: 2.4 s (from a new file arriving to the results updating)
+  Surge alerts raised:      12
+  Pipeline: file source -> stream-static join (vendors) -> 1-hour window -> alert rule
+  Velocity (Unit 1): the same code would read from Kafka instead of a folder.

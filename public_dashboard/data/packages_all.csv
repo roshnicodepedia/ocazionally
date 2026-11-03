@@ -1,0 +1,416 @@
+city,event_type,service,rank,vendor,label,rating,cancel_rate,avg_response_min,n_reviews,price_min,price_max,unit
+Ahmedabad,birthday,decor,1,Synthetic decor 94,Highly reliable,4.56,0.04,114,66,132700,309300,per_event
+Ahmedabad,birthday,decor,2,Synthetic decor 17,Highly reliable,4.56,0.057,86,93,143600,424200,per_event
+Ahmedabad,birthday,decor,3,"Decor vendor in Paldi (listed, V0202)",New vendor: not yet proven,0.0,0.1,170,0,70800,169800,per_event
+Ahmedabad,birthday,catering,1,"Catering vendor in Maninagar (listed, V0092)",Highly reliable,4.4,0.0,74,15,430,870,per_plate
+Ahmedabad,birthday,catering,2,"Catering vendor in Bhadra (listed, V0099)",Highly reliable,4.65,0.058,45,20,630,1030,per_plate
+Ahmedabad,birthday,catering,3,"Catering vendor in Vasna (listed, V0118)",New vendor: not yet proven,4.0,0.0,73,3,270,400,per_plate
+Ahmedabad,birthday,sound_dj,1,Synthetic sound_dj 177,Highly reliable,4.51,0.057,193,285,13500,39400,per_event
+Ahmedabad,birthday,sound_dj,2,Synthetic sound_dj 160,Highly reliable,4.57,0.059,91,37,12100,34500,per_event
+Ahmedabad,birthday,sound_dj,3,Synthetic sound_dj 147,New vendor: not yet proven,4.5,0.111,41,2,19900,34000,per_event
+Ahmedabad,college_fest,sound_dj,1,Synthetic sound_dj 177,Highly reliable,4.51,0.057,193,285,13500,39400,per_event
+Ahmedabad,college_fest,sound_dj,2,Synthetic sound_dj 160,Highly reliable,4.57,0.059,91,37,12100,34500,per_event
+Ahmedabad,college_fest,sound_dj,3,Synthetic sound_dj 147,New vendor: not yet proven,4.5,0.111,41,2,19900,34000,per_event
+Ahmedabad,college_fest,lighting,1,Synthetic lighting 339,Reliable,4.61,0.089,97,233,37400,62000,per_event
+Ahmedabad,college_fest,lighting,2,Synthetic lighting 278,Highly reliable,4.57,0.0,177,7,32800,49400,per_event
+Ahmedabad,college_fest,lighting,3,Synthetic lighting 257,New vendor: not yet proven,4.33,0.0,646,3,29700,61500,per_event
+Ahmedabad,college_fest,photography,1,"Photography vendor in Maninagar (listed, V0537)",Highly reliable,4.57,0.018,66,14,85600,161400,per_event
+Ahmedabad,college_fest,photography,2,"Photography vendor in Paldi (listed, V0583)",Reliable,4.51,0.078,131,47,52000,120200,per_event
+Ahmedabad,college_fest,photography,3,"Photography vendor in satellite (listed, V0509)",New vendor: not yet proven,4.25,0.0,111,4,75800,154100,per_event
+Ahmedabad,college_fest,other,1,"Other vendor in Navrangpura (listed, V0331)",Highly reliable,5.0,0.0,105,1,16300,42900,per_event
+Ahmedabad,college_fest,other,2,"Other vendor in Paldi (listed, V0392)",Highly reliable,4.71,0.0,161,7,30300,74200,per_event
+Ahmedabad,college_fest,other,3,"Other vendor in Maninagar (listed, V0429)",New vendor: not yet proven,5.0,0.0,405,3,32100,86400,per_event
+Ahmedabad,college_fest,decor,1,Synthetic decor 94,Highly reliable,4.56,0.04,114,66,132700,309300,per_event
+Ahmedabad,college_fest,decor,2,Synthetic decor 17,Highly reliable,4.56,0.057,86,93,143600,424200,per_event
+Ahmedabad,college_fest,decor,3,"Decor vendor in Paldi (listed, V0202)",New vendor: not yet proven,0.0,0.1,170,0,70800,169800,per_event
+Ahmedabad,corporate,catering,1,"Catering vendor in Maninagar (listed, V0092)",Highly reliable,4.4,0.0,74,15,430,870,per_plate
+Ahmedabad,corporate,catering,2,"Catering vendor in Bhadra (listed, V0099)",Highly reliable,4.65,0.058,45,20,630,1030,per_plate
+Ahmedabad,corporate,catering,3,"Catering vendor in Vasna (listed, V0118)",New vendor: not yet proven,4.0,0.0,73,3,270,400,per_plate
+Ahmedabad,corporate,venue,1,Synthetic venue 244,Highly reliable,4.39,0.034,60,28,90400,199200,per_event
+Ahmedabad,corporate,venue,2,"Venue vendor in Khokhra (listed, V0705)",Reliable,4.46,0.079,106,72,94900,237800,per_event
+Ahmedabad,corporate,venue,3,Synthetic venue 232,New vendor: not yet proven,4.0,0.0,41,4,173000,503100,per_event
+Ahmedabad,corporate,photography,1,"Photography vendor in Maninagar (listed, V0537)",Highly reliable,4.57,0.018,66,14,85600,161400,per_event
+Ahmedabad,corporate,photography,2,"Photography vendor in Paldi (listed, V0583)",Reliable,4.51,0.078,131,47,52000,120200,per_event
+Ahmedabad,corporate,photography,3,"Photography vendor in satellite (listed, V0509)",New vendor: not yet proven,4.25,0.0,111,4,75800,154100,per_event
+Ahmedabad,corporate,sound_dj,1,Synthetic sound_dj 177,Highly reliable,4.51,0.057,193,285,13500,39400,per_event
+Ahmedabad,corporate,sound_dj,2,Synthetic sound_dj 160,Highly reliable,4.57,0.059,91,37,12100,34500,per_event
+Ahmedabad,corporate,sound_dj,3,Synthetic sound_dj 147,New vendor: not yet proven,4.5,0.111,41,2,19900,34000,per_event
+Ahmedabad,corporate,other,1,"Other vendor in Navrangpura (listed, V0331)",Highly reliable,5.0,0.0,105,1,16300,42900,per_event
+Ahmedabad,corporate,other,2,"Other vendor in Paldi (listed, V0392)",Highly reliable,4.71,0.0,161,7,30300,74200,per_event
+Ahmedabad,corporate,other,3,"Other vendor in Maninagar (listed, V0429)",New vendor: not yet proven,5.0,0.0,405,3,32100,86400,per_event
+Ahmedabad,diwali,lighting,1,Synthetic lighting 339,Reliable,4.61,0.089,97,233,37400,62000,per_event
+Ahmedabad,diwali,lighting,2,Synthetic lighting 278,Highly reliable,4.57,0.0,177,7,32800,49400,per_event
+Ahmedabad,diwali,lighting,3,Synthetic lighting 257,New vendor: not yet proven,4.33,0.0,646,3,29700,61500,per_event
+Ahmedabad,diwali,decor,1,Synthetic decor 94,Highly reliable,4.56,0.04,114,66,132700,309300,per_event
+Ahmedabad,diwali,decor,2,Synthetic decor 17,Highly reliable,4.56,0.057,86,93,143600,424200,per_event
+Ahmedabad,diwali,decor,3,"Decor vendor in Paldi (listed, V0202)",New vendor: not yet proven,0.0,0.1,170,0,70800,169800,per_event
+Ahmedabad,diwali,catering,1,"Catering vendor in Maninagar (listed, V0092)",Highly reliable,4.4,0.0,74,15,430,870,per_plate
+Ahmedabad,diwali,catering,2,"Catering vendor in Bhadra (listed, V0099)",Highly reliable,4.65,0.058,45,20,630,1030,per_plate
+Ahmedabad,diwali,catering,3,"Catering vendor in Vasna (listed, V0118)",New vendor: not yet proven,4.0,0.0,73,3,270,400,per_plate
+Ahmedabad,navratri_society,sound_dj,1,Synthetic sound_dj 177,Highly reliable,4.51,0.057,193,285,13500,39400,per_event
+Ahmedabad,navratri_society,sound_dj,2,Synthetic sound_dj 160,Highly reliable,4.57,0.059,91,37,12100,34500,per_event
+Ahmedabad,navratri_society,sound_dj,3,Synthetic sound_dj 147,New vendor: not yet proven,4.5,0.111,41,2,19900,34000,per_event
+Ahmedabad,navratri_society,lighting,1,Synthetic lighting 339,Reliable,4.61,0.089,97,233,37400,62000,per_event
+Ahmedabad,navratri_society,lighting,2,Synthetic lighting 278,Highly reliable,4.57,0.0,177,7,32800,49400,per_event
+Ahmedabad,navratri_society,lighting,3,Synthetic lighting 257,New vendor: not yet proven,4.33,0.0,646,3,29700,61500,per_event
+Ahmedabad,navratri_society,decor,1,Synthetic decor 94,Highly reliable,4.56,0.04,114,66,132700,309300,per_event
+Ahmedabad,navratri_society,decor,2,Synthetic decor 17,Highly reliable,4.56,0.057,86,93,143600,424200,per_event
+Ahmedabad,navratri_society,decor,3,"Decor vendor in Paldi (listed, V0202)",New vendor: not yet proven,0.0,0.1,170,0,70800,169800,per_event
+Ahmedabad,other,decor,1,Synthetic decor 94,Highly reliable,4.56,0.04,114,66,132700,309300,per_event
+Ahmedabad,other,decor,2,Synthetic decor 17,Highly reliable,4.56,0.057,86,93,143600,424200,per_event
+Ahmedabad,other,decor,3,"Decor vendor in Paldi (listed, V0202)",New vendor: not yet proven,0.0,0.1,170,0,70800,169800,per_event
+Ahmedabad,other,photography,1,"Photography vendor in Maninagar (listed, V0537)",Highly reliable,4.57,0.018,66,14,85600,161400,per_event
+Ahmedabad,other,photography,2,"Photography vendor in Paldi (listed, V0583)",Reliable,4.51,0.078,131,47,52000,120200,per_event
+Ahmedabad,other,photography,3,"Photography vendor in satellite (listed, V0509)",New vendor: not yet proven,4.25,0.0,111,4,75800,154100,per_event
+Ahmedabad,uttarayan,sound_dj,1,Synthetic sound_dj 177,Highly reliable,4.51,0.057,193,285,13500,39400,per_event
+Ahmedabad,uttarayan,sound_dj,2,Synthetic sound_dj 160,Highly reliable,4.57,0.059,91,37,12100,34500,per_event
+Ahmedabad,uttarayan,sound_dj,3,Synthetic sound_dj 147,New vendor: not yet proven,4.5,0.111,41,2,19900,34000,per_event
+Ahmedabad,uttarayan,catering,1,"Catering vendor in Maninagar (listed, V0092)",Highly reliable,4.4,0.0,74,15,430,870,per_plate
+Ahmedabad,uttarayan,catering,2,"Catering vendor in Bhadra (listed, V0099)",Highly reliable,4.65,0.058,45,20,630,1030,per_plate
+Ahmedabad,uttarayan,catering,3,"Catering vendor in Vasna (listed, V0118)",New vendor: not yet proven,4.0,0.0,73,3,270,400,per_plate
+Ahmedabad,uttarayan,lighting,1,Synthetic lighting 339,Reliable,4.61,0.089,97,233,37400,62000,per_event
+Ahmedabad,uttarayan,lighting,2,Synthetic lighting 278,Highly reliable,4.57,0.0,177,7,32800,49400,per_event
+Ahmedabad,uttarayan,lighting,3,Synthetic lighting 257,New vendor: not yet proven,4.33,0.0,646,3,29700,61500,per_event
+Ahmedabad,uttarayan,other,1,"Other vendor in Navrangpura (listed, V0331)",Highly reliable,5.0,0.0,105,1,16300,42900,per_event
+Ahmedabad,uttarayan,other,2,"Other vendor in Paldi (listed, V0392)",Highly reliable,4.71,0.0,161,7,30300,74200,per_event
+Ahmedabad,uttarayan,other,3,"Other vendor in Maninagar (listed, V0429)",New vendor: not yet proven,5.0,0.0,405,3,32100,86400,per_event
+Ahmedabad,wedding,catering,1,"Catering vendor in Maninagar (listed, V0092)",Highly reliable,4.4,0.0,74,15,430,870,per_plate
+Ahmedabad,wedding,catering,2,"Catering vendor in Bhadra (listed, V0099)",Highly reliable,4.65,0.058,45,20,630,1030,per_plate
+Ahmedabad,wedding,catering,3,"Catering vendor in Vasna (listed, V0118)",New vendor: not yet proven,4.0,0.0,73,3,270,400,per_plate
+Ahmedabad,wedding,decor,1,Synthetic decor 94,Highly reliable,4.56,0.04,114,66,132700,309300,per_event
+Ahmedabad,wedding,decor,2,Synthetic decor 17,Highly reliable,4.56,0.057,86,93,143600,424200,per_event
+Ahmedabad,wedding,decor,3,"Decor vendor in Paldi (listed, V0202)",New vendor: not yet proven,0.0,0.1,170,0,70800,169800,per_event
+Ahmedabad,wedding,photography,1,"Photography vendor in Maninagar (listed, V0537)",Highly reliable,4.57,0.018,66,14,85600,161400,per_event
+Ahmedabad,wedding,photography,2,"Photography vendor in Paldi (listed, V0583)",Reliable,4.51,0.078,131,47,52000,120200,per_event
+Ahmedabad,wedding,photography,3,"Photography vendor in satellite (listed, V0509)",New vendor: not yet proven,4.25,0.0,111,4,75800,154100,per_event
+Ahmedabad,wedding,venue,1,Synthetic venue 244,Highly reliable,4.39,0.034,60,28,90400,199200,per_event
+Ahmedabad,wedding,venue,2,"Venue vendor in Khokhra (listed, V0705)",Reliable,4.46,0.079,106,72,94900,237800,per_event
+Ahmedabad,wedding,venue,3,Synthetic venue 232,New vendor: not yet proven,4.0,0.0,41,4,173000,503100,per_event
+Ahmedabad,wedding,sound_dj,1,Synthetic sound_dj 177,Highly reliable,4.51,0.057,193,285,13500,39400,per_event
+Ahmedabad,wedding,sound_dj,2,Synthetic sound_dj 160,Highly reliable,4.57,0.059,91,37,12100,34500,per_event
+Ahmedabad,wedding,sound_dj,3,Synthetic sound_dj 147,New vendor: not yet proven,4.5,0.111,41,2,19900,34000,per_event
+Gandhinagar,birthday,decor,1,Synthetic decor 1313,Reliable,4.61,0.092,53,61,155000,392600,per_event
+Gandhinagar,birthday,decor,2,Synthetic decor 1290,Reliable,4.64,0.089,96,25,56800,163000,per_event
+Gandhinagar,birthday,decor,3,Synthetic decor 1306,New vendor: not yet proven,4.0,0.2,516,1,163200,398200,per_event
+Gandhinagar,birthday,catering,1,Synthetic catering 1323,Highly reliable,4.22,0.07,24,114,350,580,per_plate
+Gandhinagar,birthday,catering,2,Synthetic catering 1331,Reliable,4.34,0.1,94,214,340,830,per_plate
+Gandhinagar,birthday,catering,3,Synthetic catering 1330,New vendor: not yet proven,5.0,0.143,214,2,420,600,per_plate
+Gandhinagar,birthday,sound_dj,1,Synthetic sound_dj 1340,Reliable,4.47,0.079,130,78,24700,66300,per_event
+Gandhinagar,birthday,sound_dj,2,Synthetic sound_dj 1345,Reliable,4.36,0.107,64,195,14200,35800,per_event
+Gandhinagar,college_fest,sound_dj,1,Synthetic sound_dj 1340,Reliable,4.47,0.079,130,78,24700,66300,per_event
+Gandhinagar,college_fest,sound_dj,2,Synthetic sound_dj 1345,Reliable,4.36,0.107,64,195,14200,35800,per_event
+Gandhinagar,college_fest,lighting,1,Synthetic lighting 1419,Reliable,4.12,0.06,23,356,37600,85100,per_event
+Gandhinagar,college_fest,lighting,2,Synthetic lighting 1409,Reliable,4.43,0.077,168,213,39800,63300,per_event
+Gandhinagar,college_fest,photography,1,Synthetic photography 1369,Highly reliable,4.29,0.067,90,168,60700,144700,per_event
+Gandhinagar,college_fest,photography,2,Synthetic photography 1373,Highly reliable,4.48,0.059,60,21,67500,158400,per_event
+Gandhinagar,college_fest,photography,3,Synthetic photography 1377,New vendor: not yet proven,4.0,0.111,17,3,24800,58600,per_event
+Gandhinagar,college_fest,other,1,Synthetic other 1440,Reliable,4.1,0.065,93,30,17200,45900,per_event
+Gandhinagar,college_fest,other,2,Synthetic other 1438,Reliable,4.16,0.101,81,37,20900,59600,per_event
+Gandhinagar,college_fest,decor,1,Synthetic decor 1313,Reliable,4.61,0.092,53,61,155000,392600,per_event
+Gandhinagar,college_fest,decor,2,Synthetic decor 1290,Reliable,4.64,0.089,96,25,56800,163000,per_event
+Gandhinagar,college_fest,decor,3,Synthetic decor 1306,New vendor: not yet proven,4.0,0.2,516,1,163200,398200,per_event
+Gandhinagar,corporate,catering,1,Synthetic catering 1323,Highly reliable,4.22,0.07,24,114,350,580,per_plate
+Gandhinagar,corporate,catering,2,Synthetic catering 1331,Reliable,4.34,0.1,94,214,340,830,per_plate
+Gandhinagar,corporate,catering,3,Synthetic catering 1330,New vendor: not yet proven,5.0,0.143,214,2,420,600,per_plate
+Gandhinagar,corporate,venue,1,Synthetic venue 1395,Highly reliable,4.22,0.06,54,138,138200,367100,per_event
+Gandhinagar,corporate,venue,2,Synthetic venue 1399,Reliable,4.09,0.083,48,89,221400,415400,per_event
+Gandhinagar,corporate,photography,1,Synthetic photography 1369,Highly reliable,4.29,0.067,90,168,60700,144700,per_event
+Gandhinagar,corporate,photography,2,Synthetic photography 1373,Highly reliable,4.48,0.059,60,21,67500,158400,per_event
+Gandhinagar,corporate,photography,3,Synthetic photography 1377,New vendor: not yet proven,4.0,0.111,17,3,24800,58600,per_event
+Gandhinagar,corporate,sound_dj,1,Synthetic sound_dj 1340,Reliable,4.47,0.079,130,78,24700,66300,per_event
+Gandhinagar,corporate,sound_dj,2,Synthetic sound_dj 1345,Reliable,4.36,0.107,64,195,14200,35800,per_event
+Gandhinagar,corporate,other,1,Synthetic other 1440,Reliable,4.1,0.065,93,30,17200,45900,per_event
+Gandhinagar,corporate,other,2,Synthetic other 1438,Reliable,4.16,0.101,81,37,20900,59600,per_event
+Gandhinagar,diwali,lighting,1,Synthetic lighting 1419,Reliable,4.12,0.06,23,356,37600,85100,per_event
+Gandhinagar,diwali,lighting,2,Synthetic lighting 1409,Reliable,4.43,0.077,168,213,39800,63300,per_event
+Gandhinagar,diwali,decor,1,Synthetic decor 1313,Reliable,4.61,0.092,53,61,155000,392600,per_event
+Gandhinagar,diwali,decor,2,Synthetic decor 1290,Reliable,4.64,0.089,96,25,56800,163000,per_event
+Gandhinagar,diwali,decor,3,Synthetic decor 1306,New vendor: not yet proven,4.0,0.2,516,1,163200,398200,per_event
+Gandhinagar,diwali,catering,1,Synthetic catering 1323,Highly reliable,4.22,0.07,24,114,350,580,per_plate
+Gandhinagar,diwali,catering,2,Synthetic catering 1331,Reliable,4.34,0.1,94,214,340,830,per_plate
+Gandhinagar,diwali,catering,3,Synthetic catering 1330,New vendor: not yet proven,5.0,0.143,214,2,420,600,per_plate
+Gandhinagar,navratri_society,sound_dj,1,Synthetic sound_dj 1340,Reliable,4.47,0.079,130,78,24700,66300,per_event
+Gandhinagar,navratri_society,sound_dj,2,Synthetic sound_dj 1345,Reliable,4.36,0.107,64,195,14200,35800,per_event
+Gandhinagar,navratri_society,lighting,1,Synthetic lighting 1419,Reliable,4.12,0.06,23,356,37600,85100,per_event
+Gandhinagar,navratri_society,lighting,2,Synthetic lighting 1409,Reliable,4.43,0.077,168,213,39800,63300,per_event
+Gandhinagar,navratri_society,decor,1,Synthetic decor 1313,Reliable,4.61,0.092,53,61,155000,392600,per_event
+Gandhinagar,navratri_society,decor,2,Synthetic decor 1290,Reliable,4.64,0.089,96,25,56800,163000,per_event
+Gandhinagar,navratri_society,decor,3,Synthetic decor 1306,New vendor: not yet proven,4.0,0.2,516,1,163200,398200,per_event
+Gandhinagar,other,decor,1,Synthetic decor 1313,Reliable,4.61,0.092,53,61,155000,392600,per_event
+Gandhinagar,other,decor,2,Synthetic decor 1290,Reliable,4.64,0.089,96,25,56800,163000,per_event
+Gandhinagar,other,decor,3,Synthetic decor 1306,New vendor: not yet proven,4.0,0.2,516,1,163200,398200,per_event
+Gandhinagar,other,photography,1,Synthetic photography 1369,Highly reliable,4.29,0.067,90,168,60700,144700,per_event
+Gandhinagar,other,photography,2,Synthetic photography 1373,Highly reliable,4.48,0.059,60,21,67500,158400,per_event
+Gandhinagar,other,photography,3,Synthetic photography 1377,New vendor: not yet proven,4.0,0.111,17,3,24800,58600,per_event
+Gandhinagar,uttarayan,sound_dj,1,Synthetic sound_dj 1340,Reliable,4.47,0.079,130,78,24700,66300,per_event
+Gandhinagar,uttarayan,sound_dj,2,Synthetic sound_dj 1345,Reliable,4.36,0.107,64,195,14200,35800,per_event
+Gandhinagar,uttarayan,catering,1,Synthetic catering 1323,Highly reliable,4.22,0.07,24,114,350,580,per_plate
+Gandhinagar,uttarayan,catering,2,Synthetic catering 1331,Reliable,4.34,0.1,94,214,340,830,per_plate
+Gandhinagar,uttarayan,catering,3,Synthetic catering 1330,New vendor: not yet proven,5.0,0.143,214,2,420,600,per_plate
+Gandhinagar,uttarayan,lighting,1,Synthetic lighting 1419,Reliable,4.12,0.06,23,356,37600,85100,per_event
+Gandhinagar,uttarayan,lighting,2,Synthetic lighting 1409,Reliable,4.43,0.077,168,213,39800,63300,per_event
+Gandhinagar,uttarayan,other,1,Synthetic other 1440,Reliable,4.1,0.065,93,30,17200,45900,per_event
+Gandhinagar,uttarayan,other,2,Synthetic other 1438,Reliable,4.16,0.101,81,37,20900,59600,per_event
+Gandhinagar,wedding,catering,1,Synthetic catering 1323,Highly reliable,4.22,0.07,24,114,350,580,per_plate
+Gandhinagar,wedding,catering,2,Synthetic catering 1331,Reliable,4.34,0.1,94,214,340,830,per_plate
+Gandhinagar,wedding,catering,3,Synthetic catering 1330,New vendor: not yet proven,5.0,0.143,214,2,420,600,per_plate
+Gandhinagar,wedding,decor,1,Synthetic decor 1313,Reliable,4.61,0.092,53,61,155000,392600,per_event
+Gandhinagar,wedding,decor,2,Synthetic decor 1290,Reliable,4.64,0.089,96,25,56800,163000,per_event
+Gandhinagar,wedding,decor,3,Synthetic decor 1306,New vendor: not yet proven,4.0,0.2,516,1,163200,398200,per_event
+Gandhinagar,wedding,photography,1,Synthetic photography 1369,Highly reliable,4.29,0.067,90,168,60700,144700,per_event
+Gandhinagar,wedding,photography,2,Synthetic photography 1373,Highly reliable,4.48,0.059,60,21,67500,158400,per_event
+Gandhinagar,wedding,photography,3,Synthetic photography 1377,New vendor: not yet proven,4.0,0.111,17,3,24800,58600,per_event
+Gandhinagar,wedding,venue,1,Synthetic venue 1395,Highly reliable,4.22,0.06,54,138,138200,367100,per_event
+Gandhinagar,wedding,venue,2,Synthetic venue 1399,Reliable,4.09,0.083,48,89,221400,415400,per_event
+Gandhinagar,wedding,sound_dj,1,Synthetic sound_dj 1340,Reliable,4.47,0.079,130,78,24700,66300,per_event
+Gandhinagar,wedding,sound_dj,2,Synthetic sound_dj 1345,Reliable,4.36,0.107,64,195,14200,35800,per_event
+Rajkot,birthday,decor,1,Synthetic decor 1100,Reliable,4.5,0.077,38,220,93400,165300,per_event
+Rajkot,birthday,decor,2,Synthetic decor 1073,Highly reliable,4.41,0.045,90,167,20000,41100,per_event
+Rajkot,birthday,decor,3,Synthetic decor 1094,New vendor: not yet proven,4.0,0.111,190,4,87300,252600,per_event
+Rajkot,birthday,catering,1,Synthetic catering 1127,Highly reliable,4.71,0.059,91,7,390,750,per_plate
+Rajkot,birthday,catering,2,Synthetic catering 1111,Reliable,4.4,0.102,71,259,440,1210,per_plate
+Rajkot,birthday,sound_dj,1,Synthetic sound_dj 1160,Reliable,4.16,0.054,80,401,18500,50900,per_event
+Rajkot,birthday,sound_dj,2,Synthetic sound_dj 1157,Highly reliable,4.22,0.064,40,110,9200,20600,per_event
+Rajkot,birthday,sound_dj,3,Synthetic sound_dj 1171,New vendor: not yet proven,0.0,0.0,36,0,11700,26500,per_event
+Rajkot,college_fest,sound_dj,1,Synthetic sound_dj 1160,Reliable,4.16,0.054,80,401,18500,50900,per_event
+Rajkot,college_fest,sound_dj,2,Synthetic sound_dj 1157,Highly reliable,4.22,0.064,40,110,9200,20600,per_event
+Rajkot,college_fest,sound_dj,3,Synthetic sound_dj 1171,New vendor: not yet proven,0.0,0.0,36,0,11700,26500,per_event
+Rajkot,college_fest,lighting,1,Synthetic lighting 1262,Reliable,4.27,0.074,46,181,20000,53600,per_event
+Rajkot,college_fest,lighting,2,Synthetic lighting 1255,Highly reliable,4.43,0.064,59,44,19700,54000,per_event
+Rajkot,college_fest,lighting,3,Synthetic lighting 1251,New vendor: not yet proven,5.0,0.111,51,1,38600,113100,per_event
+Rajkot,college_fest,photography,1,Synthetic photography 1200,Highly reliable,4.49,0.065,49,102,56100,126100,per_event
+Rajkot,college_fest,photography,2,Synthetic photography 1199,Reliable,4.47,0.077,105,306,81700,184600,per_event
+Rajkot,college_fest,other,1,Synthetic other 1286,Reliable,4.4,0.074,92,108,10000,23500,per_event
+Rajkot,college_fest,other,2,Synthetic other 1278,Reliable,4.07,0.07,76,71,16800,48300,per_event
+Rajkot,college_fest,other,3,Synthetic other 1270,New vendor: not yet proven,0.0,0.286,52,0,14300,37300,per_event
+Rajkot,college_fest,decor,1,Synthetic decor 1100,Reliable,4.5,0.077,38,220,93400,165300,per_event
+Rajkot,college_fest,decor,2,Synthetic decor 1073,Highly reliable,4.41,0.045,90,167,20000,41100,per_event
+Rajkot,college_fest,decor,3,Synthetic decor 1094,New vendor: not yet proven,4.0,0.111,190,4,87300,252600,per_event
+Rajkot,corporate,catering,1,Synthetic catering 1127,Highly reliable,4.71,0.059,91,7,390,750,per_plate
+Rajkot,corporate,catering,2,Synthetic catering 1111,Reliable,4.4,0.102,71,259,440,1210,per_plate
+Rajkot,corporate,venue,1,Synthetic venue 1223,Highly reliable,4.53,0.056,41,57,179400,471200,per_event
+Rajkot,corporate,venue,2,Synthetic venue 1222,Highly reliable,4.25,0.051,39,153,194900,352700,per_event
+Rajkot,corporate,venue,3,Synthetic venue 1224,New vendor: not yet proven,4.5,0.0,98,2,208500,482700,per_event
+Rajkot,corporate,photography,1,Synthetic photography 1200,Highly reliable,4.49,0.065,49,102,56100,126100,per_event
+Rajkot,corporate,photography,2,Synthetic photography 1199,Reliable,4.47,0.077,105,306,81700,184600,per_event
+Rajkot,corporate,sound_dj,1,Synthetic sound_dj 1160,Reliable,4.16,0.054,80,401,18500,50900,per_event
+Rajkot,corporate,sound_dj,2,Synthetic sound_dj 1157,Highly reliable,4.22,0.064,40,110,9200,20600,per_event
+Rajkot,corporate,sound_dj,3,Synthetic sound_dj 1171,New vendor: not yet proven,0.0,0.0,36,0,11700,26500,per_event
+Rajkot,corporate,other,1,Synthetic other 1286,Reliable,4.4,0.074,92,108,10000,23500,per_event
+Rajkot,corporate,other,2,Synthetic other 1278,Reliable,4.07,0.07,76,71,16800,48300,per_event
+Rajkot,corporate,other,3,Synthetic other 1270,New vendor: not yet proven,0.0,0.286,52,0,14300,37300,per_event
+Rajkot,diwali,lighting,1,Synthetic lighting 1262,Reliable,4.27,0.074,46,181,20000,53600,per_event
+Rajkot,diwali,lighting,2,Synthetic lighting 1255,Highly reliable,4.43,0.064,59,44,19700,54000,per_event
+Rajkot,diwali,lighting,3,Synthetic lighting 1251,New vendor: not yet proven,5.0,0.111,51,1,38600,113100,per_event
+Rajkot,diwali,decor,1,Synthetic decor 1100,Reliable,4.5,0.077,38,220,93400,165300,per_event
+Rajkot,diwali,decor,2,Synthetic decor 1073,Highly reliable,4.41,0.045,90,167,20000,41100,per_event
+Rajkot,diwali,decor,3,Synthetic decor 1094,New vendor: not yet proven,4.0,0.111,190,4,87300,252600,per_event
+Rajkot,diwali,catering,1,Synthetic catering 1127,Highly reliable,4.71,0.059,91,7,390,750,per_plate
+Rajkot,diwali,catering,2,Synthetic catering 1111,Reliable,4.4,0.102,71,259,440,1210,per_plate
+Rajkot,navratri_society,sound_dj,1,Synthetic sound_dj 1160,Reliable,4.16,0.054,80,401,18500,50900,per_event
+Rajkot,navratri_society,sound_dj,2,Synthetic sound_dj 1157,Highly reliable,4.22,0.064,40,110,9200,20600,per_event
+Rajkot,navratri_society,sound_dj,3,Synthetic sound_dj 1171,New vendor: not yet proven,0.0,0.0,36,0,11700,26500,per_event
+Rajkot,navratri_society,lighting,1,Synthetic lighting 1262,Reliable,4.27,0.074,46,181,20000,53600,per_event
+Rajkot,navratri_society,lighting,2,Synthetic lighting 1255,Highly reliable,4.43,0.064,59,44,19700,54000,per_event
+Rajkot,navratri_society,lighting,3,Synthetic lighting 1251,New vendor: not yet proven,5.0,0.111,51,1,38600,113100,per_event
+Rajkot,navratri_society,decor,1,Synthetic decor 1100,Reliable,4.5,0.077,38,220,93400,165300,per_event
+Rajkot,navratri_society,decor,2,Synthetic decor 1073,Highly reliable,4.41,0.045,90,167,20000,41100,per_event
+Rajkot,navratri_society,decor,3,Synthetic decor 1094,New vendor: not yet proven,4.0,0.111,190,4,87300,252600,per_event
+Rajkot,other,decor,1,Synthetic decor 1100,Reliable,4.5,0.077,38,220,93400,165300,per_event
+Rajkot,other,decor,2,Synthetic decor 1073,Highly reliable,4.41,0.045,90,167,20000,41100,per_event
+Rajkot,other,decor,3,Synthetic decor 1094,New vendor: not yet proven,4.0,0.111,190,4,87300,252600,per_event
+Rajkot,other,photography,1,Synthetic photography 1200,Highly reliable,4.49,0.065,49,102,56100,126100,per_event
+Rajkot,other,photography,2,Synthetic photography 1199,Reliable,4.47,0.077,105,306,81700,184600,per_event
+Rajkot,uttarayan,sound_dj,1,Synthetic sound_dj 1160,Reliable,4.16,0.054,80,401,18500,50900,per_event
+Rajkot,uttarayan,sound_dj,2,Synthetic sound_dj 1157,Highly reliable,4.22,0.064,40,110,9200,20600,per_event
+Rajkot,uttarayan,sound_dj,3,Synthetic sound_dj 1171,New vendor: not yet proven,0.0,0.0,36,0,11700,26500,per_event
+Rajkot,uttarayan,catering,1,Synthetic catering 1127,Highly reliable,4.71,0.059,91,7,390,750,per_plate
+Rajkot,uttarayan,catering,2,Synthetic catering 1111,Reliable,4.4,0.102,71,259,440,1210,per_plate
+Rajkot,uttarayan,lighting,1,Synthetic lighting 1262,Reliable,4.27,0.074,46,181,20000,53600,per_event
+Rajkot,uttarayan,lighting,2,Synthetic lighting 1255,Highly reliable,4.43,0.064,59,44,19700,54000,per_event
+Rajkot,uttarayan,lighting,3,Synthetic lighting 1251,New vendor: not yet proven,5.0,0.111,51,1,38600,113100,per_event
+Rajkot,uttarayan,other,1,Synthetic other 1286,Reliable,4.4,0.074,92,108,10000,23500,per_event
+Rajkot,uttarayan,other,2,Synthetic other 1278,Reliable,4.07,0.07,76,71,16800,48300,per_event
+Rajkot,uttarayan,other,3,Synthetic other 1270,New vendor: not yet proven,0.0,0.286,52,0,14300,37300,per_event
+Rajkot,wedding,catering,1,Synthetic catering 1127,Highly reliable,4.71,0.059,91,7,390,750,per_plate
+Rajkot,wedding,catering,2,Synthetic catering 1111,Reliable,4.4,0.102,71,259,440,1210,per_plate
+Rajkot,wedding,decor,1,Synthetic decor 1100,Reliable,4.5,0.077,38,220,93400,165300,per_event
+Rajkot,wedding,decor,2,Synthetic decor 1073,Highly reliable,4.41,0.045,90,167,20000,41100,per_event
+Rajkot,wedding,decor,3,Synthetic decor 1094,New vendor: not yet proven,4.0,0.111,190,4,87300,252600,per_event
+Rajkot,wedding,photography,1,Synthetic photography 1200,Highly reliable,4.49,0.065,49,102,56100,126100,per_event
+Rajkot,wedding,photography,2,Synthetic photography 1199,Reliable,4.47,0.077,105,306,81700,184600,per_event
+Rajkot,wedding,venue,1,Synthetic venue 1223,Highly reliable,4.53,0.056,41,57,179400,471200,per_event
+Rajkot,wedding,venue,2,Synthetic venue 1222,Highly reliable,4.25,0.051,39,153,194900,352700,per_event
+Rajkot,wedding,venue,3,Synthetic venue 1224,New vendor: not yet proven,4.5,0.0,98,2,208500,482700,per_event
+Rajkot,wedding,sound_dj,1,Synthetic sound_dj 1160,Reliable,4.16,0.054,80,401,18500,50900,per_event
+Rajkot,wedding,sound_dj,2,Synthetic sound_dj 1157,Highly reliable,4.22,0.064,40,110,9200,20600,per_event
+Rajkot,wedding,sound_dj,3,Synthetic sound_dj 1171,New vendor: not yet proven,0.0,0.0,36,0,11700,26500,per_event
+Surat,birthday,decor,1,Synthetic decor 351,Highly reliable,4.5,0.05,50,108,127500,323800,per_event
+Surat,birthday,decor,2,Synthetic decor 361,Highly reliable,4.61,0.055,96,59,101600,302100,per_event
+Surat,birthday,decor,3,Synthetic decor 380,New vendor: not yet proven,4.33,0.0,202,3,110500,248600,per_event
+Surat,birthday,catering,1,Synthetic catering 419,Highly reliable,4.4,0.058,59,580,470,960,per_plate
+Surat,birthday,catering,2,Synthetic catering 461,Reliable,4.79,0.077,40,19,470,1350,per_plate
+Surat,birthday,catering,3,Synthetic catering 457,New vendor: not yet proven,4.0,0.0,51,1,460,1030,per_plate
+Surat,birthday,sound_dj,1,Synthetic sound_dj 545,Highly reliable,4.5,0.065,76,34,11800,31200,per_event
+Surat,birthday,sound_dj,2,Synthetic sound_dj 530,Reliable,4.09,0.062,55,205,17600,45900,per_event
+Surat,birthday,sound_dj,3,Synthetic sound_dj 538,New vendor: not yet proven,5.0,0.0,44,1,27400,68200,per_event
+Surat,college_fest,sound_dj,1,Synthetic sound_dj 545,Highly reliable,4.5,0.065,76,34,11800,31200,per_event
+Surat,college_fest,sound_dj,2,Synthetic sound_dj 530,Reliable,4.09,0.062,55,205,17600,45900,per_event
+Surat,college_fest,sound_dj,3,Synthetic sound_dj 538,New vendor: not yet proven,5.0,0.0,44,1,27400,68200,per_event
+Surat,college_fest,lighting,1,Synthetic lighting 714,Reliable,4.52,0.081,87,354,21800,36400,per_event
+Surat,college_fest,lighting,2,Synthetic lighting 724,Highly reliable,4.53,0.03,94,34,8400,21700,per_event
+Surat,college_fest,lighting,3,Synthetic lighting 700,New vendor: not yet proven,3.5,0.0,43,2,48000,110700,per_event
+Surat,college_fest,photography,1,Synthetic photography 566,Highly reliable,4.52,0.047,75,176,93300,182800,per_event
+Surat,college_fest,photography,2,Synthetic photography 575,Highly reliable,4.43,0.024,71,14,68300,137300,per_event
+Surat,college_fest,photography,3,Synthetic photography 613,New vendor: not yet proven,4.0,0.0,214,1,96600,196700,per_event
+Surat,college_fest,other,1,Synthetic other 765,Highly reliable,4.35,0.044,91,86,24900,47600,per_event
+Surat,college_fest,other,2,Synthetic other 754,Highly reliable,4.24,0.016,107,37,20800,50200,per_event
+Surat,college_fest,other,3,Synthetic other 786,New vendor: not yet proven,3.0,0.0,44,2,19300,43200,per_event
+Surat,college_fest,decor,1,Synthetic decor 351,Highly reliable,4.5,0.05,50,108,127500,323800,per_event
+Surat,college_fest,decor,2,Synthetic decor 361,Highly reliable,4.61,0.055,96,59,101600,302100,per_event
+Surat,college_fest,decor,3,Synthetic decor 380,New vendor: not yet proven,4.33,0.0,202,3,110500,248600,per_event
+Surat,corporate,catering,1,Synthetic catering 419,Highly reliable,4.4,0.058,59,580,470,960,per_plate
+Surat,corporate,catering,2,Synthetic catering 461,Reliable,4.79,0.077,40,19,470,1350,per_plate
+Surat,corporate,catering,3,Synthetic catering 457,New vendor: not yet proven,4.0,0.0,51,1,460,1030,per_plate
+Surat,corporate,venue,1,Synthetic venue 656,Reliable,4.39,0.079,85,338,91400,177500,per_event
+Surat,corporate,venue,2,Synthetic venue 677,Highly reliable,4.35,0.017,68,20,108600,180500,per_event
+Surat,corporate,venue,3,Synthetic venue 663,New vendor: not yet proven,5.0,0.0,90,2,129900,201600,per_event
+Surat,corporate,photography,1,Synthetic photography 566,Highly reliable,4.52,0.047,75,176,93300,182800,per_event
+Surat,corporate,photography,2,Synthetic photography 575,Highly reliable,4.43,0.024,71,14,68300,137300,per_event
+Surat,corporate,photography,3,Synthetic photography 613,New vendor: not yet proven,4.0,0.0,214,1,96600,196700,per_event
+Surat,corporate,sound_dj,1,Synthetic sound_dj 545,Highly reliable,4.5,0.065,76,34,11800,31200,per_event
+Surat,corporate,sound_dj,2,Synthetic sound_dj 530,Reliable,4.09,0.062,55,205,17600,45900,per_event
+Surat,corporate,sound_dj,3,Synthetic sound_dj 538,New vendor: not yet proven,5.0,0.0,44,1,27400,68200,per_event
+Surat,corporate,other,1,Synthetic other 765,Highly reliable,4.35,0.044,91,86,24900,47600,per_event
+Surat,corporate,other,2,Synthetic other 754,Highly reliable,4.24,0.016,107,37,20800,50200,per_event
+Surat,corporate,other,3,Synthetic other 786,New vendor: not yet proven,3.0,0.0,44,2,19300,43200,per_event
+Surat,diwali,lighting,1,Synthetic lighting 714,Reliable,4.52,0.081,87,354,21800,36400,per_event
+Surat,diwali,lighting,2,Synthetic lighting 724,Highly reliable,4.53,0.03,94,34,8400,21700,per_event
+Surat,diwali,lighting,3,Synthetic lighting 700,New vendor: not yet proven,3.5,0.0,43,2,48000,110700,per_event
+Surat,diwali,decor,1,Synthetic decor 351,Highly reliable,4.5,0.05,50,108,127500,323800,per_event
+Surat,diwali,decor,2,Synthetic decor 361,Highly reliable,4.61,0.055,96,59,101600,302100,per_event
+Surat,diwali,decor,3,Synthetic decor 380,New vendor: not yet proven,4.33,0.0,202,3,110500,248600,per_event
+Surat,diwali,catering,1,Synthetic catering 419,Highly reliable,4.4,0.058,59,580,470,960,per_plate
+Surat,diwali,catering,2,Synthetic catering 461,Reliable,4.79,0.077,40,19,470,1350,per_plate
+Surat,diwali,catering,3,Synthetic catering 457,New vendor: not yet proven,4.0,0.0,51,1,460,1030,per_plate
+Surat,navratri_society,sound_dj,1,Synthetic sound_dj 545,Highly reliable,4.5,0.065,76,34,11800,31200,per_event
+Surat,navratri_society,sound_dj,2,Synthetic sound_dj 530,Reliable,4.09,0.062,55,205,17600,45900,per_event
+Surat,navratri_society,sound_dj,3,Synthetic sound_dj 538,New vendor: not yet proven,5.0,0.0,44,1,27400,68200,per_event
+Surat,navratri_society,lighting,1,Synthetic lighting 714,Reliable,4.52,0.081,87,354,21800,36400,per_event
+Surat,navratri_society,lighting,2,Synthetic lighting 724,Highly reliable,4.53,0.03,94,34,8400,21700,per_event
+Surat,navratri_society,lighting,3,Synthetic lighting 700,New vendor: not yet proven,3.5,0.0,43,2,48000,110700,per_event
+Surat,navratri_society,decor,1,Synthetic decor 351,Highly reliable,4.5,0.05,50,108,127500,323800,per_event
+Surat,navratri_society,decor,2,Synthetic decor 361,Highly reliable,4.61,0.055,96,59,101600,302100,per_event
+Surat,navratri_society,decor,3,Synthetic decor 380,New vendor: not yet proven,4.33,0.0,202,3,110500,248600,per_event
+Surat,other,decor,1,Synthetic decor 351,Highly reliable,4.5,0.05,50,108,127500,323800,per_event
+Surat,other,decor,2,Synthetic decor 361,Highly reliable,4.61,0.055,96,59,101600,302100,per_event
+Surat,other,decor,3,Synthetic decor 380,New vendor: not yet proven,4.33,0.0,202,3,110500,248600,per_event
+Surat,other,photography,1,Synthetic photography 566,Highly reliable,4.52,0.047,75,176,93300,182800,per_event
+Surat,other,photography,2,Synthetic photography 575,Highly reliable,4.43,0.024,71,14,68300,137300,per_event
+Surat,other,photography,3,Synthetic photography 613,New vendor: not yet proven,4.0,0.0,214,1,96600,196700,per_event
+Surat,uttarayan,sound_dj,1,Synthetic sound_dj 545,Highly reliable,4.5,0.065,76,34,11800,31200,per_event
+Surat,uttarayan,sound_dj,2,Synthetic sound_dj 530,Reliable,4.09,0.062,55,205,17600,45900,per_event
+Surat,uttarayan,sound_dj,3,Synthetic sound_dj 538,New vendor: not yet proven,5.0,0.0,44,1,27400,68200,per_event
+Surat,uttarayan,catering,1,Synthetic catering 419,Highly reliable,4.4,0.058,59,580,470,960,per_plate
+Surat,uttarayan,catering,2,Synthetic catering 461,Reliable,4.79,0.077,40,19,470,1350,per_plate
+Surat,uttarayan,catering,3,Synthetic catering 457,New vendor: not yet proven,4.0,0.0,51,1,460,1030,per_plate
+Surat,uttarayan,lighting,1,Synthetic lighting 714,Reliable,4.52,0.081,87,354,21800,36400,per_event
+Surat,uttarayan,lighting,2,Synthetic lighting 724,Highly reliable,4.53,0.03,94,34,8400,21700,per_event
+Surat,uttarayan,lighting,3,Synthetic lighting 700,New vendor: not yet proven,3.5,0.0,43,2,48000,110700,per_event
+Surat,uttarayan,other,1,Synthetic other 765,Highly reliable,4.35,0.044,91,86,24900,47600,per_event
+Surat,uttarayan,other,2,Synthetic other 754,Highly reliable,4.24,0.016,107,37,20800,50200,per_event
+Surat,uttarayan,other,3,Synthetic other 786,New vendor: not yet proven,3.0,0.0,44,2,19300,43200,per_event
+Surat,wedding,catering,1,Synthetic catering 419,Highly reliable,4.4,0.058,59,580,470,960,per_plate
+Surat,wedding,catering,2,Synthetic catering 461,Reliable,4.79,0.077,40,19,470,1350,per_plate
+Surat,wedding,catering,3,Synthetic catering 457,New vendor: not yet proven,4.0,0.0,51,1,460,1030,per_plate
+Surat,wedding,decor,1,Synthetic decor 351,Highly reliable,4.5,0.05,50,108,127500,323800,per_event
+Surat,wedding,decor,2,Synthetic decor 361,Highly reliable,4.61,0.055,96,59,101600,302100,per_event
+Surat,wedding,decor,3,Synthetic decor 380,New vendor: not yet proven,4.33,0.0,202,3,110500,248600,per_event
+Surat,wedding,photography,1,Synthetic photography 566,Highly reliable,4.52,0.047,75,176,93300,182800,per_event
+Surat,wedding,photography,2,Synthetic photography 575,Highly reliable,4.43,0.024,71,14,68300,137300,per_event
+Surat,wedding,photography,3,Synthetic photography 613,New vendor: not yet proven,4.0,0.0,214,1,96600,196700,per_event
+Surat,wedding,venue,1,Synthetic venue 656,Reliable,4.39,0.079,85,338,91400,177500,per_event
+Surat,wedding,venue,2,Synthetic venue 677,Highly reliable,4.35,0.017,68,20,108600,180500,per_event
+Surat,wedding,venue,3,Synthetic venue 663,New vendor: not yet proven,5.0,0.0,90,2,129900,201600,per_event
+Surat,wedding,sound_dj,1,Synthetic sound_dj 545,Highly reliable,4.5,0.065,76,34,11800,31200,per_event
+Surat,wedding,sound_dj,2,Synthetic sound_dj 530,Reliable,4.09,0.062,55,205,17600,45900,per_event
+Surat,wedding,sound_dj,3,Synthetic sound_dj 538,New vendor: not yet proven,5.0,0.0,44,1,27400,68200,per_event
+Vadodara,birthday,decor,1,Synthetic decor 813,Highly reliable,4.35,0.068,124,286,131600,194300,per_event
+Vadodara,birthday,decor,2,Synthetic decor 797,Highly reliable,4.31,0.024,79,29,82600,212400,per_event
+Vadodara,birthday,decor,3,Synthetic decor 810,New vendor: not yet proven,3.5,0.0,96,2,43300,112200,per_event
+Vadodara,birthday,catering,1,Synthetic catering 845,Highly reliable,4.62,0.052,91,48,280,440,per_plate
+Vadodara,birthday,catering,2,Synthetic catering 848,Highly reliable,4.45,0.06,87,84,470,970,per_plate
+Vadodara,birthday,sound_dj,1,Synthetic sound_dj 894,Highly reliable,4.57,0.042,89,65,23000,63600,per_event
+Vadodara,birthday,sound_dj,2,Synthetic sound_dj 923,Reliable,4.49,0.076,113,39,12400,33100,per_event
+Vadodara,college_fest,sound_dj,1,Synthetic sound_dj 894,Highly reliable,4.57,0.042,89,65,23000,63600,per_event
+Vadodara,college_fest,sound_dj,2,Synthetic sound_dj 923,Reliable,4.49,0.076,113,39,12400,33100,per_event
+Vadodara,college_fest,lighting,1,Synthetic lighting 1040,Reliable,4.03,0.038,27,145,32700,67400,per_event
+Vadodara,college_fest,lighting,2,Synthetic lighting 1038,Highly reliable,4.42,0.022,213,31,18000,43700,per_event
+Vadodara,college_fest,lighting,3,Synthetic lighting 1033,New vendor: not yet proven,3.6,0.0,325,5,36500,89900,per_event
+Vadodara,college_fest,photography,1,Synthetic photography 945,Reliable,4.38,0.082,145,218,24000,36400,per_event
+Vadodara,college_fest,photography,2,Synthetic photography 936,Reliable,4.53,0.073,267,177,62100,175100,per_event
+Vadodara,college_fest,photography,3,Synthetic photography 931,New vendor: not yet proven,5.0,0.0,107,1,97200,256300,per_event
+Vadodara,college_fest,other,1,Synthetic other 1046,Reliable,4.2,0.075,57,148,16900,26900,per_event
+Vadodara,college_fest,other,2,Synthetic other 1048,Reliable,4.07,0.063,131,287,15400,44500,per_event
+Vadodara,college_fest,other,3,Synthetic other 1058,New vendor: not yet proven,5.0,0.222,79,2,12800,32600,per_event
+Vadodara,college_fest,decor,1,Synthetic decor 813,Highly reliable,4.35,0.068,124,286,131600,194300,per_event
+Vadodara,college_fest,decor,2,Synthetic decor 797,Highly reliable,4.31,0.024,79,29,82600,212400,per_event
+Vadodara,college_fest,decor,3,Synthetic decor 810,New vendor: not yet proven,3.5,0.0,96,2,43300,112200,per_event
+Vadodara,corporate,catering,1,Synthetic catering 845,Highly reliable,4.62,0.052,91,48,280,440,per_plate
+Vadodara,corporate,catering,2,Synthetic catering 848,Highly reliable,4.45,0.06,87,84,470,970,per_plate
+Vadodara,corporate,venue,1,Synthetic venue 1004,Highly reliable,4.37,0.056,99,230,146700,316300,per_event
+Vadodara,corporate,venue,2,Synthetic venue 990,Reliable,4.71,0.11,29,41,135000,305500,per_event
+Vadodara,corporate,venue,3,Synthetic venue 977,New vendor: not yet proven,4.67,0.125,74,3,151200,349900,per_event
+Vadodara,corporate,photography,1,Synthetic photography 945,Reliable,4.38,0.082,145,218,24000,36400,per_event
+Vadodara,corporate,photography,2,Synthetic photography 936,Reliable,4.53,0.073,267,177,62100,175100,per_event
+Vadodara,corporate,photography,3,Synthetic photography 931,New vendor: not yet proven,5.0,0.0,107,1,97200,256300,per_event
+Vadodara,corporate,sound_dj,1,Synthetic sound_dj 894,Highly reliable,4.57,0.042,89,65,23000,63600,per_event
+Vadodara,corporate,sound_dj,2,Synthetic sound_dj 923,Reliable,4.49,0.076,113,39,12400,33100,per_event
+Vadodara,corporate,other,1,Synthetic other 1046,Reliable,4.2,0.075,57,148,16900,26900,per_event
+Vadodara,corporate,other,2,Synthetic other 1048,Reliable,4.07,0.063,131,287,15400,44500,per_event
+Vadodara,corporate,other,3,Synthetic other 1058,New vendor: not yet proven,5.0,0.222,79,2,12800,32600,per_event
+Vadodara,diwali,lighting,1,Synthetic lighting 1040,Reliable,4.03,0.038,27,145,32700,67400,per_event
+Vadodara,diwali,lighting,2,Synthetic lighting 1038,Highly reliable,4.42,0.022,213,31,18000,43700,per_event
+Vadodara,diwali,lighting,3,Synthetic lighting 1033,New vendor: not yet proven,3.6,0.0,325,5,36500,89900,per_event
+Vadodara,diwali,decor,1,Synthetic decor 813,Highly reliable,4.35,0.068,124,286,131600,194300,per_event
+Vadodara,diwali,decor,2,Synthetic decor 797,Highly reliable,4.31,0.024,79,29,82600,212400,per_event
+Vadodara,diwali,decor,3,Synthetic decor 810,New vendor: not yet proven,3.5,0.0,96,2,43300,112200,per_event
+Vadodara,diwali,catering,1,Synthetic catering 845,Highly reliable,4.62,0.052,91,48,280,440,per_plate
+Vadodara,diwali,catering,2,Synthetic catering 848,Highly reliable,4.45,0.06,87,84,470,970,per_plate
+Vadodara,navratri_society,sound_dj,1,Synthetic sound_dj 894,Highly reliable,4.57,0.042,89,65,23000,63600,per_event
+Vadodara,navratri_society,sound_dj,2,Synthetic sound_dj 923,Reliable,4.49,0.076,113,39,12400,33100,per_event
+Vadodara,navratri_society,lighting,1,Synthetic lighting 1040,Reliable,4.03,0.038,27,145,32700,67400,per_event
+Vadodara,navratri_society,lighting,2,Synthetic lighting 1038,Highly reliable,4.42,0.022,213,31,18000,43700,per_event
+Vadodara,navratri_society,lighting,3,Synthetic lighting 1033,New vendor: not yet proven,3.6,0.0,325,5,36500,89900,per_event
+Vadodara,navratri_society,decor,1,Synthetic decor 813,Highly reliable,4.35,0.068,124,286,131600,194300,per_event
+Vadodara,navratri_society,decor,2,Synthetic decor 797,Highly reliable,4.31,0.024,79,29,82600,212400,per_event
+Vadodara,navratri_society,decor,3,Synthetic decor 810,New vendor: not yet proven,3.5,0.0,96,2,43300,112200,per_event
+Vadodara,other,decor,1,Synthetic decor 813,Highly reliable,4.35,0.068,124,286,131600,194300,per_event
+Vadodara,other,decor,2,Synthetic decor 797,Highly reliable,4.31,0.024,79,29,82600,212400,per_event
+Vadodara,other,decor,3,Synthetic decor 810,New vendor: not yet proven,3.5,0.0,96,2,43300,112200,per_event
+Vadodara,other,photography,1,Synthetic photography 945,Reliable,4.38,0.082,145,218,24000,36400,per_event
+Vadodara,other,photography,2,Synthetic photography 936,Reliable,4.53,0.073,267,177,62100,175100,per_event
+Vadodara,other,photography,3,Synthetic photography 931,New vendor: not yet proven,5.0,0.0,107,1,97200,256300,per_event
+Vadodara,uttarayan,sound_dj,1,Synthetic sound_dj 894,Highly reliable,4.57,0.042,89,65,23000,63600,per_event
+Vadodara,uttarayan,sound_dj,2,Synthetic sound_dj 923,Reliable,4.49,0.076,113,39,12400,33100,per_event
+Vadodara,uttarayan,catering,1,Synthetic catering 845,Highly reliable,4.62,0.052,91,48,280,440,per_plate
+Vadodara,uttarayan,catering,2,Synthetic catering 848,Highly reliable,4.45,0.06,87,84,470,970,per_plate
+Vadodara,uttarayan,lighting,1,Synthetic lighting 1040,Reliable,4.03,0.038,27,145,32700,67400,per_event
+Vadodara,uttarayan,lighting,2,Synthetic lighting 1038,Highly reliable,4.42,0.022,213,31,18000,43700,per_event
+Vadodara,uttarayan,lighting,3,Synthetic lighting 1033,New vendor: not yet proven,3.6,0.0,325,5,36500,89900,per_event
+Vadodara,uttarayan,other,1,Synthetic other 1046,Reliable,4.2,0.075,57,148,16900,26900,per_event
+Vadodara,uttarayan,other,2,Synthetic other 1048,Reliable,4.07,0.063,131,287,15400,44500,per_event
+Vadodara,uttarayan,other,3,Synthetic other 1058,New vendor: not yet proven,5.0,0.222,79,2,12800,32600,per_event
+Vadodara,wedding,catering,1,Synthetic catering 845,Highly reliable,4.62,0.052,91,48,280,440,per_plate
+Vadodara,wedding,catering,2,Synthetic catering 848,Highly reliable,4.45,0.06,87,84,470,970,per_plate
+Vadodara,wedding,decor,1,Synthetic decor 813,Highly reliable,4.35,0.068,124,286,131600,194300,per_event
+Vadodara,wedding,decor,2,Synthetic decor 797,Highly reliable,4.31,0.024,79,29,82600,212400,per_event
+Vadodara,wedding,decor,3,Synthetic decor 810,New vendor: not yet proven,3.5,0.0,96,2,43300,112200,per_event
+Vadodara,wedding,photography,1,Synthetic photography 945,Reliable,4.38,0.082,145,218,24000,36400,per_event
+Vadodara,wedding,photography,2,Synthetic photography 936,Reliable,4.53,0.073,267,177,62100,175100,per_event
+Vadodara,wedding,photography,3,Synthetic photography 931,New vendor: not yet proven,5.0,0.0,107,1,97200,256300,per_event
+Vadodara,wedding,venue,1,Synthetic venue 1004,Highly reliable,4.37,0.056,99,230,146700,316300,per_event
+Vadodara,wedding,venue,2,Synthetic venue 990,Reliable,4.71,0.11,29,41,135000,305500,per_event
+Vadodara,wedding,venue,3,Synthetic venue 977,New vendor: not yet proven,4.67,0.125,74,3,151200,349900,per_event
+Vadodara,wedding,sound_dj,1,Synthetic sound_dj 894,Highly reliable,4.57,0.042,89,65,23000,63600,per_event
+Vadodara,wedding,sound_dj,2,Synthetic sound_dj 923,Reliable,4.49,0.076,113,39,12400,33100,per_event
